@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var wordToBeDisplayedLabel: UILabel!
+    
+    var words = ["angel", "skate", "robes", "heroes", "mate"]
+    
+    wordToBeDisplayedLabel.text = words.random()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
